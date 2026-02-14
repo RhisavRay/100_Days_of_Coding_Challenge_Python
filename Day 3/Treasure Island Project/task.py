@@ -22,3 +22,8 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
+
+move1 = input("Where do you want to go?\n\tType \"left\" or \"right\"")
+
+if move1 == "left":
+    print("")
