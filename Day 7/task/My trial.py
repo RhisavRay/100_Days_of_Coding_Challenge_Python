@@ -1,43 +1,44 @@
-import random, hangman_art, hangman_words
+import random, hangman_words, hangman_art
 
 target_word = random.choice(hangman_words.word_list)
+
+print(hangman_art.logo)
 
 current_word = ""
 for letter in target_word:
     current_word += "_"
 
-# print(target_word)
-# print(current_word)
-
 lives_left = 6
+given_inputs = ""
 
-print(hangman_art.logo)
+while lives_left > 0 and "_" in current_word:
+    print(f"Word to guess: {current_word}")
+    user_input = input("Guess a letter: ").lower()
 
-while lives_left > 0:
-    print(F"Word to guess: {current_word}")
-    guess = input("Guess a letter: ").lower()
-
-    if len(guess) != 1:
+    if len(user_input) != 1:
         print("Please enter a single letter")
         continue
 
-    if guess not in target_word:
-        print(f"You guessed {guess}. That's not in the word. Try again.")
-        lives_left -= 1
+    if user_input in given_inputs:
+        print("You have already used this character. Try a new one")
     else:
-        current_word = ""
-        for letter in target_word:
-            if letter == guess:
-                current_word += guess
-            else:
-                current_word += "_"
-    print(hangman_art.stages[lives_left])
-    print(f"****************************** {lives_left}/6 lives left ******************************")
-    if "_" in current_word:
-        continue
-    else:
-        print("Congratulations! You win!")
-        break
+        given_inputs += user_input
+        if user_input not in target_word:
+            lives_left -= 1
+            print(f"You guessed {user_input}. That's not in the word. Try again.")
+        else:
+            new_word = ""
+            for i in range(len(target_word)):
+                if target_word[i] == user_input:
+                    new_word += target_word[i]
+                else:
+                    new_word += current_word[i]
+            current_word = new_word
+
+        print(hangman_art.stages[lives_left])
+        print(f"****************************** {lives_left}/6 lives left ******************************")
 
 if lives_left == 0:
-    print("Sorry, you lose")
+    print(f"\n\n\tSorry. You lost. The word was {target_word}")
+else:
+    print("\n\n\tCongratulations! You won!")
