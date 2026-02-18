@@ -21,6 +21,3 @@ def encrypt(original_text, shift_amount):
 
 
 encrypt(original_text=text, shift_amount=shift)
-
-
-
