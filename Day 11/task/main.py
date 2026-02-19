@@ -85,7 +85,6 @@ while decision == "y":
                 comp_score += int(new_card)
 
     if victory or (my_score < 21 and my_score > comp_score):
-        print(victory)
         print(f"Your cards: [{", ".join(my_cards)}]\tYour score: {my_score}")
         print(f"Dealer's card: [{", ".join(comp_cards)}]\tDealer's score: {comp_score}")
         print("Congratulations! You win!")
