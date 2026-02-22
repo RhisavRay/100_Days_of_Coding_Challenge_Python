@@ -9,6 +9,18 @@ files:
   - name: Day 16.py
     visible: true
     learner_created: true
+  - name: Coffee Machine with OOP/menu.py
+    visible: true
+    learner_created: true
+  - name: Coffee Machine with OOP/money_machine.py
+    visible: true
+    learner_created: true
+  - name: Coffee Machine with OOP/coffee_maker.py
+    visible: true
+    learner_created: true
+  - name: Coffee Machine with OOP/main.py
+    visible: true
+    learner_created: true
 status: Solved
 record: -1
 post_submission_on_open: true
