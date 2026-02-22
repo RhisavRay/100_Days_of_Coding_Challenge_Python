@@ -5,5 +5,5 @@ class QuizBrain:
 
     def next_question(self):
         question = self.question_list[self.question_no]
-        answer = input(f"Q{self.question_no} {question.question}?(True/False): ").capitalize()
         self.question_no += 1
+        answer = input(f"Q{self.question_no} {question.question}?(True/False): ").capitalize()
