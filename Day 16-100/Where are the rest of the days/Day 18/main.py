@@ -75,15 +75,39 @@ timmy.color("red")
 #     timmy.forward(30)
 
 
-#Timmy draws a spirograph
+# Timmy draws a spirograph
 
+# screen.colormode(255)
+# timmy.width(2)
+# timmy.speed(100)
+# for _ in range(36):
+#     timmy.color((randint(1, 255), randint(1, 255), randint(1, 255)))
+#     timmy.circle(100)
+#     timmy.left(10)
+
+
+# Timmy draws a million dollar piece of art
 screen.colormode(255)
-timmy.width(2)
-timmy.speed(100)
-for _ in range(36):
-    timmy.color((randint(1, 255), randint(1, 255), randint(1, 255)))
-    timmy.circle(100)
-    timmy.left(10)
+timmy.speed(300)
+timmy.up()
+timmy.back(150)
+timmy.rt(90)
+timmy.fd(150)
+timmy.lt(90)
+timmy.down()
+for _ in range(10):
+    for _ in range(10):
+        timmy.color((randint(1, 255), randint(1, 255), randint(1, 255)))
+        timmy.dot(10)
+        timmy.up()
+        timmy.forward(30)
+        timmy.down()
+    timmy.up()
+    timmy.back(300)
+    timmy.left(90)
+    timmy.fd(30)
+    timmy.right(90)
+    timmy.down()
 
 
 # Makes the screen wait for a click before it closes
