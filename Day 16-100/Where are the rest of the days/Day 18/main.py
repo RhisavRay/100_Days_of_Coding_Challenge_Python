@@ -75,7 +75,15 @@ timmy.color("red")
 #     timmy.forward(30)
 
 
-#
+#Timmy draws a spirograph
+
+screen.colormode(255)
+timmy.width(2)
+timmy.speed(100)
+for _ in range(36):
+    timmy.color((randint(1, 255), randint(1, 255), randint(1, 255)))
+    timmy.circle(100)
+    timmy.left(10)
 
 
 # Makes the screen wait for a click before it closes
