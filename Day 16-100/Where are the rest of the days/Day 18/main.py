@@ -1,4 +1,6 @@
+from random import randint
 from turtle import Turtle, Screen
+import random
 
 timmy = Turtle()
 # Change the shape to that of a turtle
@@ -36,7 +38,18 @@ timmy.color("red")
 #     timmy.down()
 
 
-
+# Timmy draws triangle, sqaure, pentagon, hexagon, and so on till 10 sides
+# timmy.up()
+# timmy.right(90)
+# timmy.backward(200)
+# timmy.left(90)
+# timmy.backward(50)
+# timmy.down()
+#
+# for i in range(3, 11):
+#     for _ in range(i):
+#         timmy.forward(100)
+#         timmy.rt(360/i)
 
 
 screen = Screen()
