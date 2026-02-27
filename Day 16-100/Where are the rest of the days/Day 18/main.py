@@ -87,27 +87,27 @@ timmy.color("red")
 
 
 # Timmy draws a million dollar piece of art
-screen.colormode(255)
-timmy.speed(300)
-timmy.up()
-timmy.back(150)
-timmy.rt(90)
-timmy.fd(150)
-timmy.lt(90)
-timmy.down()
-for _ in range(10):
-    for _ in range(10):
-        timmy.color((randint(1, 255), randint(1, 255), randint(1, 255)))
-        timmy.dot(10)
-        timmy.up()
-        timmy.forward(30)
-        timmy.down()
-    timmy.up()
-    timmy.back(300)
-    timmy.left(90)
-    timmy.fd(30)
-    timmy.right(90)
-    timmy.down()
+# screen.colormode(255)
+# timmy.speed(300)
+# timmy.up()
+# timmy.back(150)
+# timmy.rt(90)
+# timmy.fd(150)
+# timmy.lt(90)
+# timmy.down()
+# for _ in range(10):
+#     for _ in range(10):
+#         timmy.color((randint(1, 255), randint(1, 255), randint(1, 255)))
+#         timmy.dot(10)
+#         timmy.up()
+#         timmy.forward(30)
+#         timmy.down()
+#     timmy.up()
+#     timmy.back(300)
+#     timmy.left(90)
+#     timmy.fd(30)
+#     timmy.right(90)
+#     timmy.down()
 
 
 # Makes the screen wait for a click before it closes
