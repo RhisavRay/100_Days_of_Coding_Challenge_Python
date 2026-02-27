@@ -3,12 +3,13 @@ from turtle import Turtle, Screen
 import random
 
 timmy = Turtle()
+screen = Screen()
 # Change the shape to that of a turtle
 timmy.shape("turtle")
 # Change the color of the turtle
 timmy.color("red")
 
-colors = ["red", "yellow", "green", "blue", "purple", "cornflower blue", "orange", "pink", "green yellow", "dark orange"]
+# colors = ["red", "yellow", "green", "blue", "purple", "cornflower blue", "orange", "pink", "green yellow", "dark orange"]
 
 # Move the tutle 100 units to the front
 # the basic forward, backward, left and right commands have shorthand versions as well. They work exactly the same way.
@@ -61,17 +62,21 @@ colors = ["red", "yellow", "green", "blue", "purple", "cornflower blue", "orange
 
 # Timmy draws a random walk
 
-timmy.width(10)
-timmy.speed(100)
+# screen.colormode(255)
+# timmy.width(10)
+# timmy.speed(100)
+#
+# angles = [0, 90, 180, 270]
+#
+# for _ in range(100):
+#     # timmy.color(random.choice(colors))
+#     timmy.color((randint(1, 255), randint(1, 255), randint(1, 255)))
+#     timmy.left(random.choice(angles))
+#     timmy.forward(30)
 
-angles = [0, 90, 180, 270]
 
-for _ in range(100):
-    timmy.color(random.choice(colors))
-    timmy.left(random.choice(angles))
-    timmy.forward(30)
+#
 
 
-screen = Screen()
 # Makes the screen wait for a click before it closes
 screen.exitonclick()
