@@ -20,9 +20,24 @@ timmy.color("red")
 # timmy.forward(100)
 
 # Now instead of all the previous lines, we can just use a loop as well
-# for i in range(4):
+# for _ in range(4):
 #     timmy.forward(100)
 #     timmy.left(90)
+
+
+# Timmy draws a dashed line
+# timmy.up()
+# timmy.backward(500)
+# timmy.down()
+# for _ in range(50):
+#     timmy.forward(10)
+#     timmy.up()
+#     timmy.forward(10)
+#     timmy.down()
+
+
+
+
 
 screen = Screen()
 # Makes the screen wait for a click before it closes
