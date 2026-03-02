@@ -42,6 +42,9 @@ files:
   - name: Day 19/main.py
     visible: true
     learner_created: true
+  - name: Day 20-21/Snake game.py
+    visible: true
+    learner_created: true
 status: Solved
 record: -1
 post_submission_on_open: true
