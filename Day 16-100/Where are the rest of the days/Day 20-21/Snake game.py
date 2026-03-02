@@ -7,7 +7,19 @@ screen.bgcolor("black")
 
 # TODO 1: Create the snake
 
+turtles = []
+init_pos = [-20, 0, 20]
+screen.tracer(0)
 
+for i in range(3):
+    turtle = Turtle()
+    turtle.shape("square")
+    turtle.color("white")
+    turtle.up()
+    turtle.goto(init_pos[i], 0)
+    turtles.append(turtle)
+
+screen.update()
 
 # TODO 2: Make the snake move forward till GAME OVER (This logic to be added later)
 
