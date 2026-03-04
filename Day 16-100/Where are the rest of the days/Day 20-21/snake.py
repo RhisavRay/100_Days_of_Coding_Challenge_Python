@@ -62,9 +62,10 @@ class Snake:
         return False
 
     def bite_check(self):
-        for i in range(4, len(self.snake)):
+        if len(self.snake) > 4:
             head_x, head_y = round(self.head.xcor()), round(self.head.ycor())
-            segment_x, segment_y = round(self.snake[i].xcor()), round(self.snake[i].ycor())
-            if head_x == segment_x and head_y == segment_y:
-                return True
+            for segment in self.snake[4:]:
+                segment_x, segment_y = round(segment.xcor()), round(segment.ycor())
+                if head_x == segment_x and head_y == segment_y:
+                    return True
         return False
