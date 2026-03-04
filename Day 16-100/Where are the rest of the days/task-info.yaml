@@ -42,7 +42,10 @@ files:
   - name: Day 19/main.py
     visible: true
     learner_created: true
-  - name: Day 20-21/Snake game.py
+  - name: Day 20-21/snake_game.py
+    visible: true
+    learner_created: true
+  - name: Day 20-21/snake.py
     visible: true
     learner_created: true
 status: Solved
