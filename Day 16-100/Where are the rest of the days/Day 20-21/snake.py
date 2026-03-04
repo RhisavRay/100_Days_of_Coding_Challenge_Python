@@ -60,3 +60,11 @@ class Snake:
         if abs(self.head.xcor()) > 300 or abs(self.head.ycor()) > 300:
             return True
         return False
+
+    def bite_check(self):
+        for i in range(4, len(self.snake)):
+            head_x, head_y = round(self.head.xcor()), round(self.head.ycor())
+            segment_x, segment_y = round(self.snake[i].xcor()), round(self.snake[i].ycor())
+            if head_x == segment_x and head_y == segment_y:
+                return True
+        return False
