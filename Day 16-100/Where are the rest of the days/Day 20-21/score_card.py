@@ -13,6 +13,9 @@ class ScoreCard:
         self.score.goto(0, 310)
         self.score.color("white")
 
+    def show_score(self):
+        self.score.clear()
+        self.score.write(f"Score: {self.score_value}", align="center", font=("Arial", 16, "normal"))
 
     def gain_score(self):
         self.score += 1
