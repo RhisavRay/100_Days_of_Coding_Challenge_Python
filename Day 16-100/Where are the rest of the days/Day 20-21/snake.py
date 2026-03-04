@@ -1,4 +1,3 @@
-import time
 from turtle import Turtle
 
 INIT_POS = [-20, 0, 20]
@@ -25,22 +24,18 @@ class Snake:
     def turn_right(self):
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
-        self.move()
     
     def turn_left(self):
         if self.head.heading() != RIGHT:
             self.head.setheading(LEFT)
-        self.move()
     
     def turn_up(self):
         if self.head.heading() != DOWN:
             self.head.setheading(UP)
-        self.move()
     
     def turn_down(self):
         if self.head.heading() != UP:
             self.head.setheading(DOWN)
-        self.move()
     
     def move(self):
         for i in range(len(self.snake) - 1, 0, -1):
