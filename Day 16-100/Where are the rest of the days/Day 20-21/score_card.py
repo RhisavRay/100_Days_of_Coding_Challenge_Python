@@ -20,3 +20,7 @@ class ScoreCard:
     def gain_score(self):
         self.score_value += 1
         self.show_score()
+
+    def game_over(self):
+        self.score.clear()
+        self.score.write(f"GAME OVER  ---  Final Score: {self.score_value}", align="center", font=("Arial", 16, "normal"))
