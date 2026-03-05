@@ -46,17 +46,6 @@ def game_loop():
         screen.update()
         screen.ontimer(game_loop, 100)
 
-
-# TODO 6: Make the snake grow upon eating the food
-
-
-
-# TODO 7: Add score feature
-
-
-
-# TODO 8: Add the GAME OVER logic (Hitting wall or biting own tail)
-
 game_loop()
 
 screen.exitonclick()
