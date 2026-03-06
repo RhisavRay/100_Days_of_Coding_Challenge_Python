@@ -54,6 +54,18 @@ files:
   - name: Day 20-21/score_card.py
     visible: true
     learner_created: true
+  - name: Day 22/pong_game.py
+    visible: true
+    learner_created: true
+  - name: Day 22/paddle.py
+    visible: true
+    learner_created: true
+  - name: Day 22/ball.py
+    visible: true
+    learner_created: true
+  - name: Day 22/score.py
+    visible: true
+    learner_created: true
 status: Solved
 record: -1
 post_submission_on_open: true
