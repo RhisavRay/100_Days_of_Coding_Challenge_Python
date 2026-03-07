@@ -10,3 +10,7 @@ class Player(Turtle):
     def reset(self):
         self.setheading(90)
         self.goto(0, -300)
+
+    def move_up(self):
+        self.setheading(90)
+        self.forward(25)
