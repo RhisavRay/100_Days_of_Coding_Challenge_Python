@@ -66,6 +66,12 @@ files:
   - name: Day 22/score.py
     visible: true
     learner_created: true
+  - name: Day 23/turtle_crossing.py
+    visible: true
+    learner_created: true
+  - name: Day 23/player.py
+    visible: true
+    learner_created: true
 status: Solved
 record: -1
 post_submission_on_open: true
