@@ -14,3 +14,7 @@ class Player(Turtle):
     def move_up(self):
         self.setheading(90)
         self.forward(25)
+
+    def move_down(self):
+        self.setheading(270)
+        self.forward(25)
