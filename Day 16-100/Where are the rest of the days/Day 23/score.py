@@ -12,3 +12,7 @@ class Score(Turtle):
     def show_score(self):
         self.clear()
         self.write(f"Level: {self.score}", align='center', font=('Courier', 14, 'normal'))
+
+    def gain_score(self):
+        self.score += 1
+        self.show_score()
