@@ -78,7 +78,7 @@ files:
   - name: Day 23/lane.py
     visible: true
     learner_created: true
-  - name: Day 23/Score.py
+  - name: Day 23/score.py
     visible: true
     learner_created: true
 status: Solved
