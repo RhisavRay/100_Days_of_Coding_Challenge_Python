@@ -1,5 +1,8 @@
-from turtle import Turtle, Screen
+from turtle import Screen
 from player import Player
+from lane import Lane
+from score import Score
+import random
 
 
 screen = Screen()
