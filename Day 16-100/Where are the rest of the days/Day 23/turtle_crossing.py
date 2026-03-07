@@ -48,5 +48,10 @@ def game_loop():
     score.show_score()
     if game_is_on:
         pass
+        if directions['Up']:
+            player.move_up()
+        if not easy_mode:
+            if directions['Down']:
+                player.move_down()
 
 screen.exitonclick()
