@@ -6,7 +6,10 @@ import random
 
 
 screen = Screen()
-screen.setup(600, 600)
+screen.setup(650, 650)
+screen.tracer(0)
+screen.listen()
+
 
 player = Player()
 
