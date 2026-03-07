@@ -4,5 +4,11 @@ import random
 
 
 class Lane(Turtle):
-    def __init__(self):
+    def __init__(self, side, y):
         super().__init__()
+        self.side = side
+        self.car = Car()
+        self.hideturtle()
+        self.side = side
+        self.y = y
+        self.car_setup()
