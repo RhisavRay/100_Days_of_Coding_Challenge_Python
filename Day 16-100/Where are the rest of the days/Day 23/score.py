@@ -8,3 +8,7 @@ class Score(Turtle):
         self.hideturtle()
         self.goto(-250, 280)
         self.score = 1
+
+    def show_score(self):
+        self.clear()
+        self.write(f"Level: {self.score}", align='center', font=('Courier', 14, 'normal'))
