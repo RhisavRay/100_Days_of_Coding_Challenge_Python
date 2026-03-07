@@ -7,3 +7,4 @@ class Player(Turtle):
         self.up()
         self.goto(0, -280)
         self.lt(90)
+        self.reset()
