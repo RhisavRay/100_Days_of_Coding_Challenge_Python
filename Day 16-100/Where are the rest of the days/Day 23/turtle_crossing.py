@@ -47,11 +47,15 @@ def game_loop():
     global game_is_on
     score.show_score()
     if game_is_on:
-        pass
         if directions['Up']:
             player.move_up()
         if not easy_mode:
             if directions['Down']:
                 player.move_down()
+        for lane in lanes:
+            lane.car.move()
+            if (lane.side == 'L' and lane.car.xcor() > 320) or (lane.side == 'R' and lane.car.xcor() < -320):
+                lane.car_setup()
+game_loop()
 
 screen.exitonclick()
