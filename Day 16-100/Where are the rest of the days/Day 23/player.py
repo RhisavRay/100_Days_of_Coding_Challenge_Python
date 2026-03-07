@@ -5,6 +5,8 @@ class Player(Turtle):
     def __init__(self):
         super().__init__()
         self.up()
-        self.goto(0, -280)
-        self.lt(90)
         self.reset()
+
+    def reset(self):
+        self.setheading(90)
+        self.goto(0, -300)
