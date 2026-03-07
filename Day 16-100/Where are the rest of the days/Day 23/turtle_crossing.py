@@ -28,6 +28,20 @@ screen.onkeyrelease(lambda: key_release("Down"), "Down")
 
 
 game_is_on = True
+easy_mode = 0
+
+ycors = [-225, -175, -125, -75, -25, 25, 75, 125, 175, 225]
+side = ["L"]
+if not easy_mode:
+    side.append("R")
+lanes = []
+for ycor in ycors:
+    lane = Lane(random.choice(side), ycor)
+    lanes.append(lane)
+
+
+score = Score()
+
 
 def game_loop():
     global game_is_on
