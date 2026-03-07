@@ -13,3 +13,6 @@ class Car(Turtle):
 
     def color_random(self):
         self.color(random.choice(COLORS))
+
+    def move(self):
+        self.forward(self.dist)
