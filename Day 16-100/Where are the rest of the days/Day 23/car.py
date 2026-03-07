@@ -10,3 +10,6 @@ class Car(Turtle):
         self.shape('square')
         self.shapesize(1, 2)
         self.dist = random.randint(5, 20)
+
+    def color_random(self):
+        self.color(random.choice(COLORS))
