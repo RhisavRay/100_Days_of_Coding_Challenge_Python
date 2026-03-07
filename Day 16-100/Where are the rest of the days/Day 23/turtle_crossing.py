@@ -56,6 +56,18 @@ def game_loop():
             lane.car.move()
             if (lane.side == 'L' and lane.car.xcor() > 320) or (lane.side == 'R' and lane.car.xcor() < -320):
                 lane.car_setup()
+        if player.ycor() > 250:
+            player.reset()
+            score.gain_score()
+        for lane in lanes:
+            if abs(player.ycor() - lane.car.ycor()) < 15 and lane.car.xcor() - 20 < player.xcor() < lane.car.xcor() + 20:
+                score.game_over()
+                player.reset()
+                game_is_on = False
+                break
+        screen.update()
+        screen.ontimer(game_loop, 100)
+
 game_loop()
 
 screen.exitonclick()
