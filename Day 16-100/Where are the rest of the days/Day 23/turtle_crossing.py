@@ -45,6 +45,7 @@ score = Score()
 
 def game_loop():
     global game_is_on
+    score.show_score()
     if game_is_on:
         pass
 
