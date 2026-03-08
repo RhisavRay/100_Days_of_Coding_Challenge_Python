@@ -90,6 +90,9 @@ files:
   - name: Day 24/new_file.txt
     visible: true
     learner_created: true
+  - name: Day 20-21/data.txt
+    visible: true
+    learner_created: true
 status: Solved
 record: -1
 post_submission_on_open: true

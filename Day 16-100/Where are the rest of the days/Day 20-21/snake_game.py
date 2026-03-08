@@ -36,12 +36,12 @@ def game_loop():
     global game_is_on
     if game_is_on:
         snake.move()
-        # print(snake.head.pos())
         if food.collision_detection(snake.head):
             score_card.gain_score()
             snake.grow_snake()
         if snake.wall_collision() or snake.bite_check():
             game_is_on = False
+            score_card.update_highscore()
             score_card.game_over()
         screen.update()
         screen.ontimer(game_loop, 100)
