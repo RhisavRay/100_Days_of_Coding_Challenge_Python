@@ -23,8 +23,8 @@ class ScoreCard:
     def update_highscore(self):
         if self.score_value > self.high_score:
             self.high_score = self.score_value
-        with open("data.txt", "w") as data:
-            data.write(str(self.high_score))
+            with open("data.txt", "w") as data:
+                data.write(str(self.high_score))
         self.score_value = 0
         self.show_score()
 
